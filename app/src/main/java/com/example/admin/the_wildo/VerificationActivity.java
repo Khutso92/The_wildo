@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
 
-public class MainActivity extends AppCompatActivity {
+public class VerificationActivity extends AppCompatActivity {
 
 
     FirebaseAuth auth;
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 super.onCodeSent(s, forceResendingToken);
 
                 verification_code = s;
-                Toast.makeText(MainActivity.this, "Code sent to the number", Toast.LENGTH_SHORT).show();
+                Toast.makeText(VerificationActivity.this, "Code sent to the number", Toast.LENGTH_SHORT).show();
             }
         };
     }
@@ -82,10 +82,10 @@ public class MainActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if (task.isSuccessful()) {
-                    Toast.makeText(MainActivity.this, "user signed in successfully", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(VerificationActivity.this, "user signed in successfully", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(getApplicationContext(), LandingActivity.class));
                 } else {
-                    Toast.makeText(MainActivity.this, "The verification code entered was invalid ", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(VerificationActivity.this, "The verification code entered was invalid ", Toast.LENGTH_SHORT).show();
                 }
 
             }

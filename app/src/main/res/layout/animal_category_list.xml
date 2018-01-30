@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="4dp"
+
+    android:background="@drawable/square"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/square"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:background="@drawable/crawfish_frog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_margin="4dp"
+        android:background="@drawable/square"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"
+                android:lines="3"
+                android:text="The crawfish frog resides at the Detroit Zoo for only three months of the year. "
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_margin="4dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="- CrawFish"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_margin="4dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="- Australia"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

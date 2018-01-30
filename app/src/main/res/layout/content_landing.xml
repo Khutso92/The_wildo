@@ -29,7 +29,9 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:onClick="goToMaps">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -42,25 +44,6 @@
                         android:gravity="center"
                         android:text="map" />
 
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/picture" />
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="chat room" />
                 </LinearLayout>
 
 
@@ -77,7 +60,8 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:onClick="goToArticles">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -98,7 +82,9 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+
+                    android:onClick="goToJobs">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -110,6 +96,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center"
+
                         android:text="jobs" />
                 </LinearLayout>
 
@@ -119,6 +106,7 @@
             <!--third part-->
             <LinearLayout
                 android:layout_width="match_parent"
+                android:onClick="goToStudy"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
@@ -131,7 +119,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/picture" />
-
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -167,101 +154,128 @@
 
         </LinearLayout>
 
-
-        <LinearLayout
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <ImageView
-                    android:id="@+id/imageView2"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/mousebird" />
+                    android:layout_height="wrap_content">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_margin="16dp"
-                    android:text="BIRDS"
-                    android:textColor="#fff"
-                    android:textStyle="bold" />
-            </RelativeLayout>
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/mousebird" />
 
-            +
-        </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+
+                        android:layout_gravity="right|center"
+                        android:layout_margin="8dp"
+                        android:background="#4f0e0d0e"
+                        android:text="BIRDS"
+                        android:textColor="#fff"
+                        android:textStyle="bold" />
+                </RelativeLayout>
 
 
-        <LinearLayout
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_margin="8dp"
+            android:layout_height="match_parent">
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <ImageView
-                    android:id="@+id/imageView"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="wrap_content">
 
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/golden_frog" />
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/golden_frog" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_margin="16dp"
-                    android:text="AMPHIBIANS"
-                    android:textColor="#FFF"
-                    android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="8dp"
+                        android:background="#4f0e0d0e"
+                        android:text="AMPHIBIANS"
+                        android:textColor="#FFF"
+                        android:textStyle="bold" />
 
-            </RelativeLayout>
+                </RelativeLayout>
 
 
-        </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
 
-        <LinearLayout
+
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_margin="8dp"
+            android:layout_height="match_parent">
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <ImageView
-
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="wrap_content">
 
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/mammals" />
+                    <ImageView
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_margin="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
 
-                    android:text="MAMMALS"
-                    android:textColor="#FFF"
-                    android:textStyle="bold" />
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/mammals" />
 
-            </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="8dp"
+                        android:background="#4f0e0d0e"
+                        android:text="MAMMALS"
+                        android:textColor="#FFF"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
 
 
-        </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
 
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -281,10 +295,11 @@
                     android:background="@drawable/green_tree_python" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:layout_margin="16dp"
+                    android:layout_margin="8dp"
+                    android:background="#4f0e0d0e"
                     android:text="REPTILES"
                     android:textColor="#FFF"
                     android:textStyle="bold" />
@@ -293,7 +308,7 @@
 
 
         </LinearLayout>
-
+        </android.support.v7.widget.CardView>
     </LinearLayout>
 
 

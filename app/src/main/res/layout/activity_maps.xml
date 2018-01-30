@@ -4,55 +4,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.admin.the_wildo.MainActivity">
+    tools:context="com.example.admin.the_wildo.VerificationActivity">
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="400dp" />
+        android:layout_height="430dp" />
 
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
 
 
         <LinearLayout
-            android:layout_margin="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="16dp"
             android:orientation="vertical">
 
             <View
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginLeft="3dp"
-                android:background="@drawable/availability_dot"></View>
+                android:background="@drawable/zoo_dot"></View>
+
+
+
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Zoo"/>
+                android:text="Zoo" />
 
         </LinearLayout>
 
 
 
-        garden
 
         <LinearLayout
-            android:layout_margin="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="16dp"
             android:orientation="vertical">
 
 
             <View
-                android:layout_width="16dp"
+                android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="3dp"
@@ -62,42 +64,38 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Aquarium"/>
+                android:text="Aquarium" />
 
         </LinearLayout>
 
 
-
-
-
-
-
         <LinearLayout
-            android:layout_margin="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="16dp"
             android:orientation="vertical">
 
 
             <View
-                android:layout_width="16dp"
+                android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="3dp"
                 android:background="@drawable/national_park_dot"></View>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="national park"/>
+                android:text="national park" />
 
         </LinearLayout>
 
         795548
 
         <LinearLayout
-            android:layout_margin="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="16dp"
             android:orientation="vertical">
 
             <View
@@ -105,20 +103,17 @@
                 android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="3dp"
-                android:background="@drawable/aquarium_dot"></View>
+                android:background="@drawable/availability_dot"></View>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="garden"/>
+                android:text="garden" />
 
         </LinearLayout>
 
 
-
     </LinearLayout>
-
-
 
 
 </LinearLayout>
