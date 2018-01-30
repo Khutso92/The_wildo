@@ -161,6 +161,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:onClick="goToDetail"
                 android:layout_height="wrap_content">
 
                 <RelativeLayout

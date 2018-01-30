@@ -33,9 +33,16 @@ public class LandingActivity extends AppCompatActivity {
 
         startActivity(new Intent(getApplicationContext(), JobsActivity.class));
 
-    } public void goToStudy(View view) {
+    }
+
+    public void goToStudy(View view) {
 
         startActivity(new Intent(getApplicationContext(), StudyActivity.class));
 
+    }
+
+    public void goToDetail(View view){
+
+        startActivity(new Intent(getApplicationContext(), CategoryDetailActivity.class));
     }
 }
