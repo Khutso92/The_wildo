@@ -7,6 +7,8 @@ import com.example.admin.the_wildo.R;
 
 public class CategoryDetailActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
