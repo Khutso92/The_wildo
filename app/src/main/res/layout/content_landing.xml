@@ -15,144 +15,6 @@
         android:orientation="vertical">
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <!--first part-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:onClick="goToMaps">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/picture" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="map" />
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-
-            <!--second part-->
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:onClick="goToArticles">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/picture" />
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="articles" />
-
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-
-                    android:onClick="goToJobs">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/picture" />
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-
-                        android:text="jobs" />
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <!--third part-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:onClick="goToStudy"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/picture" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="where to study" />
-
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/picture" />
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="private events" />
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-
-        </LinearLayout>
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -161,8 +23,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:onClick="goToDetail"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:onClick="goToDetail">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -196,8 +58,8 @@
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_margin="8dp"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -235,8 +97,8 @@
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_margin="8dp"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -275,41 +137,96 @@
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_margin="8dp"
-            android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <ImageView
-
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="wrap_content">
 
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:layout_margin="8dp"
-                    android:background="@drawable/green_tree_python" />
+                    <ImageView
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_margin="8dp"
-                    android:background="#4f0e0d0e"
-                    android:text="REPTILES"
-                    android:textColor="#FFF"
-                    android:textStyle="bold" />
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
 
-            </RelativeLayout>
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/green_tree_python" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="8dp"
+                        android:background="#4f0e0d0e"
+                        android:text="REPTILES"
+                        android:textColor="#FFF"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
 
 
-        </LinearLayout>
+            </LinearLayout>
         </android.support.v7.widget.CardView>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/square"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="goToJobs"
+                    android:text="jobs" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="goToArticles"
+                    android:text="articles" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="goToMaps"
+                    android:text="map" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="private events" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="goToStudy"
+                    android:text="where to study" />
+            </LinearLayout>
+        </HorizontalScrollView>
     </LinearLayout>
 
 

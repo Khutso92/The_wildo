@@ -245,6 +245,7 @@
     <VideoView
         android:layout_width="match_parent"
         android:layout_height="150dp"
+        android:background="@drawable/golden_frog"
         android:layout_margin="16dp" />
     <Button
         android:layout_width="match_parent"

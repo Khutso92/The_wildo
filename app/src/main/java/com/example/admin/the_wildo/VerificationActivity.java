@@ -48,7 +48,6 @@ public class VerificationActivity extends AppCompatActivity {
         mCallBack = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
             @Override
             public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {
-
             }
 
             @Override
