@@ -41,7 +41,8 @@
         <activity android:name=".activities.DetailArticleActivity" />
         <activity android:name=".activities.JobsActivity" />
         <activity android:name=".activities.StudyActivity" />
-        <activity android:name=".activities.CategoryDetailActivity"></activity>
+        <activity android:name=".activities.CategoryDetailActivity" />
+        <activity android:name=".activities.TicketActivity"></activity>
     </application>
 
 </manifest>

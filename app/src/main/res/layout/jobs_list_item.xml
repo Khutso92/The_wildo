@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Apple Inc. Cupertina California U.S" />
+        android:text="Apple Inc.  California U.S" />
 
     <TextView
         android:layout_width="match_parent"

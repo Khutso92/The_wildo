@@ -44,5 +44,10 @@ public class LandingActivity extends AppCompatActivity {
     public void goToDetail(View view){
 
         startActivity(new Intent(getApplicationContext(), CategoryDetailActivity.class));
+
+
+    }  public void goToArticle(View view){
+
+        startActivity(new Intent(getApplicationContext(), TicketActivity.class));
     }
 }
