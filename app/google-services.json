@@ -8,50 +8,6 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:442810518155:android:5636dc023bf7b7ef",
-        "android_client_info": {
-          "package_name": "com.example.admin.zooapp"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "442810518155-621fkve9lkc46kfrrfe5ktt1t6q697g3.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.admin.zooapp",
-            "certificate_hash": "c47923da05a273d0114ca9ef24e996d75a2ff300"
-          }
-        },
-        {
-          "client_id": "442810518155-cq6gef0h9cj7im89estibhmbkcibjvj8.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDsWC7NHJVVfaYHajpjvK_Op6qn8Ew9zPg"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "442810518155-cq6gef0h9cj7im89estibhmbkcibjvj8.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:442810518155:android:65ef68bca7b05466",
         "android_client_info": {
           "package_name": "com.example.admin.the_wildo"
